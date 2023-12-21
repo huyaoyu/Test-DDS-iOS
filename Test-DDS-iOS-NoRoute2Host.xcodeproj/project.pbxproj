@@ -11,7 +11,24 @@
 		6371C49E2B346D3A009F355C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371C49D2B346D3A009F355C /* ContentView.swift */; };
 		6371C4A02B346D3B009F355C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6371C49F2B346D3B009F355C /* Assets.xcassets */; };
 		6371C4A32B346D3B009F355C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6371C4A22B346D3B009F355C /* Preview Assets.xcassets */; };
+		6371C4AA2B346D60009F355C /* DDSSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371C4A92B346D60009F355C /* DDSSample.swift */; };
+		6371C4AD2B34756B009F355C /* FastRTPSBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 6371C4AC2B34756B009F355C /* FastRTPSBridge */; };
+		6371C4AE2B3477D8009F355C /* FastRTPSBridge in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6371C4AC2B34756B009F355C /* FastRTPSBridge */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6371C4AF2B3477D8009F355C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6371C4AE2B3477D8009F355C /* FastRTPSBridge in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6371C4982B346D3A009F355C /* Test-DDS-iOS-NoRoute2Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-DDS-iOS-NoRoute2Host.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +36,7 @@
 		6371C49D2B346D3A009F355C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6371C49F2B346D3B009F355C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6371C4A22B346D3B009F355C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6371C4A92B346D60009F355C /* DDSSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDSSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6371C4AD2B34756B009F355C /* FastRTPSBridge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +74,7 @@
 				6371C49D2B346D3A009F355C /* ContentView.swift */,
 				6371C49F2B346D3B009F355C /* Assets.xcassets */,
 				6371C4A12B346D3B009F355C /* Preview Content */,
+				6371C4A92B346D60009F355C /* DDSSample.swift */,
 			);
 			path = "Test-DDS-iOS-NoRoute2Host";
 			sourceTree = "<group>";
@@ -77,12 +97,16 @@
 				6371C4942B346D3A009F355C /* Sources */,
 				6371C4952B346D3A009F355C /* Frameworks */,
 				6371C4962B346D3A009F355C /* Resources */,
+				6371C4AF2B3477D8009F355C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Test-DDS-iOS-NoRoute2Host";
+			packageProductDependencies = (
+				6371C4AC2B34756B009F355C /* FastRTPSBridge */,
+			);
 			productName = "Test-DDS-iOS-NoRoute2Host";
 			productReference = 6371C4982B346D3A009F355C /* Test-DDS-iOS-NoRoute2Host.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 6371C48F2B346D3A009F355C;
+			packageReferences = (
+				6371C4AB2B34756B009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */,
+			);
 			productRefGroup = 6371C4992B346D3A009F355C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6371C49E2B346D3A009F355C /* ContentView.swift in Sources */,
+				6371C4AA2B346D60009F355C /* DDSSample.swift in Sources */,
 				6371C49C2B346D3A009F355C /* Test_DDS_iOS_NoRoute2HostApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +315,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ai.straps.Test-DDS-iOS-NoRoute2Host";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,6 +347,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ai.straps.Test-DDS-iOS-NoRoute2Host";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6371C4AB2B34756B009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/janneskasper/FastRTPSSwift.git";
+			requirement = {
+				branch = bugfix;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6371C4AC2B34756B009F355C /* FastRTPSBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6371C4AB2B34756B009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */;
+			productName = FastRTPSBridge;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6371C4902B346D3A009F355C /* Project object */;
 }

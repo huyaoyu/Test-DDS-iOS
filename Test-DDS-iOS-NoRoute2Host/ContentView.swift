@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    var ddsSample = DDSSample(name: "DDSSample", domainID: 0)
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
