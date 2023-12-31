@@ -67,8 +67,6 @@ class DDSSample {
                 name: name,
                 domainID: domainID,
                 localAddress: ipAddress )
-        } catch FastRTPSBridgeError.RTPSContextInitializationError {
-            print("\(name) failed to initialize the context.")
         } catch {
             print("\(name) failed with unexpected error.")
         }

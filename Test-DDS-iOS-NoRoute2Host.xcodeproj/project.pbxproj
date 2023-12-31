@@ -12,8 +12,8 @@
 		6371C4A02B346D3B009F355C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6371C49F2B346D3B009F355C /* Assets.xcassets */; };
 		6371C4A32B346D3B009F355C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6371C4A22B346D3B009F355C /* Preview Assets.xcassets */; };
 		6371C4AA2B346D60009F355C /* DDSSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371C4A92B346D60009F355C /* DDSSample.swift */; };
-		6371C4AD2B34756B009F355C /* FastRTPSBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 6371C4AC2B34756B009F355C /* FastRTPSBridge */; };
-		6371C4AE2B3477D8009F355C /* FastRTPSBridge in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6371C4AC2B34756B009F355C /* FastRTPSBridge */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6371C4B82B347AB4009F355C /* FastRTPSBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 6371C4B72B347AB4009F355C /* FastRTPSBridge */; settings = {ATTRIBUTES = (Required, ); }; };
+		6371C4B92B347AD7009F355C /* FastRTPSBridge in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6371C4B72B347AB4009F355C /* FastRTPSBridge */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6371C4AE2B3477D8009F355C /* FastRTPSBridge in Embed Frameworks */,
+				6371C4B92B347AD7009F355C /* FastRTPSBridge in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6371C4AD2B34756B009F355C /* FastRTPSBridge in Frameworks */,
+				6371C4B82B347AB4009F355C /* FastRTPSBridge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			);
 			name = "Test-DDS-iOS-NoRoute2Host";
 			packageProductDependencies = (
-				6371C4AC2B34756B009F355C /* FastRTPSBridge */,
+				6371C4B72B347AB4009F355C /* FastRTPSBridge */,
 			);
 			productName = "Test-DDS-iOS-NoRoute2Host";
 			productReference = 6371C4982B346D3A009F355C /* Test-DDS-iOS-NoRoute2Host.app */;
@@ -136,7 +136,7 @@
 			);
 			mainGroup = 6371C48F2B346D3A009F355C;
 			packageReferences = (
-				6371C4AB2B34756B009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */,
+				6371C4B62B347AB4009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */,
 			);
 			productRefGroup = 6371C4992B346D3A009F355C /* Products */;
 			projectDirPath = "";
@@ -380,7 +380,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6371C4AB2B34756B009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */ = {
+		6371C4B62B347AB4009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/janneskasper/FastRTPSSwift.git";
 			requirement = {
@@ -391,9 +391,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6371C4AC2B34756B009F355C /* FastRTPSBridge */ = {
+		6371C4B72B347AB4009F355C /* FastRTPSBridge */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6371C4AB2B34756B009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */;
+			package = 6371C4B62B347AB4009F355C /* XCRemoteSwiftPackageReference "FastRTPSSwift" */;
 			productName = FastRTPSBridge;
 		};
 /* End XCSwiftPackageProductDependency section */
